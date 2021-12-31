@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- <div id="app">
+      <p>現在{{number}}回クリックされています</p>
+      <button v-on:click="countUp(2)">カウントアップ</button>
+      <div v-on:mousemove="changeMousePosition(3, $event)">
+        マウスを載せてください
+        <span v-on:mousemove.stop>反応しないでください</span>
+        <a v-on:click.prevent.stop="noEvent" href="https://google.com"></a>テスト</a>
+      </div>
+      <p>X: {{x}}, Y:{{y}}</p>
+      <input type="text" v-on:keyup.enter="MyAlert">
+      <input type="text" v-on:keyup.space.enter="MyAlert">
+    </div> -->
+
+    <!-- <div id="app">
+      <p>現在{{number}}回クリックされています</p>
+      <button @click="countUp">カウントアップ</button>
+    </div> -->
+
+    <!-- //双方向バイディング -->
+    <!-- <div id="app">
+      <input type="text" v-model="message" />
+      <h1>{{message}}</h1>
+    </div> -->
+
+    <!-- computedプロパティ -->
+    <!-- <div id="app">
+      <p>{{counter}}</p>
+      <button @click="counter += 1">+1</button>
+      <p>{{lessThanThree}}</p>
+    </div> -->
+
+    <!-- <div id="app">
+      <p>{{counter}}</p>
+      <button @click="CountUp">+1</button>
+      <button @click="CountUp()">+1</button>
+      <p>{{doubleCounterComputed}}</p>
+      <p>{{doubleCounterMethods()}}</p>
+    </div> -->
+
+    <!-- <div id="app">
+      <h1 :class="[color, bg]">Hello</h1>
+      <button @click="isActive = !isActive">切り替え</button>
+    </div> -->
+
+    <div id="app">
+      <h1 :style="[styleObject, baseStyle]">Hello</h1>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
