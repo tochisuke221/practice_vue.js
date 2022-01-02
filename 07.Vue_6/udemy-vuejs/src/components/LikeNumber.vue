@@ -2,7 +2,6 @@
   <div>
     <p>
       いいね({{ halfNumber }})
-      テスト({{testProps}})
     </p>
     <button @click="increment()">+1</button>
   </div>
@@ -29,7 +28,8 @@ export default {
   },
   methods: {
     increment() {
-      this.totalNumber += 1;
+      this.$emit('my-click', this.totalNumber + 1 );
+      // this.totalNumber += 1;
     },
   },
 };
